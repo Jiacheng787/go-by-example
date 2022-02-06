@@ -16,6 +16,7 @@ jobs:
           node-version: 14
       - name: Build
         run: |
+          cd docs
           npm install yarn -g
           yarn
           yarn build
@@ -23,6 +24,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./docs/build
           publish_branch: gh-pages
           full_commit_message: ${{ github.event.head_commit.message }}
