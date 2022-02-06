@@ -9,7 +9,7 @@ const config = {
   title: 'go-by-example',
   tagline: '⭐️ Practice golang programming skills!',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/go-by-example/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
